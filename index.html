@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link href="style.css" rel="stylesheet">
+<body>
+<div class="game">
+<div>
+    <canvas id="canvas"></canvas>
+</div>
+<div>
+    <div class="inventory">
+        <div class="inventory-element"  draggable="true">
+            <img class="inventory-element-image"  draggable="true">
+        </div>
+    <div class="inventory-element" draggable="true">
+        <img class="inventory-element-image" draggable="true">
+    </div>
+    <div class="inventory-element" draggable="true">
+        <img class="inventory-element-image" draggable="true">
+    </div>
+    <div class="inventory-element" draggable="true">/
+        <img class="inventory-element-image" draggable="true">
+    </div>
+    <div class="inventory-element" draggable="true">
+        <img class="inventory-element-image" draggable="true">
+    </div>
+    <div class="inventory-element" draggable="true">
+        <img class="inventory-element-image" draggable="true">
+    </div>
+    <div class="inventory-element" draggable="true">
+        <img class="inventory-element-image" draggable="true">
+    </div>
+    <div class="inventory-element" draggable="true">
+        <img class="inventory-element-image" draggable="true">
+    </div>
+    <div class="inventory-element" draggable="true">
+        <img class="inventory-element-image" draggable="true">
+    </div>
+    </div>
+    <div class="skills">
+        <div class="skill">
+            <div class="heathBar">
+                <img src="image/UI/hearts.png">
+            </div>
+        </div>
+    </div>
+    <div class="death-window">
+        <img src="image/UI/die.png">
+        <p>You Lose!</p>
+    </div>
+    
+    <div class="exchange-window">
+        <button class="new-item"></button>
+        <button class="lost-item"></button>
+        <button class="start-exchange">
+            <h1>Exchange</h1>
+        </button>
+
+    </div>
+    <button class="start-exchange-window"></button>
+    <button class="inventory-button"></button>
+</div>
+<div class="craft">
+    <div class="craft-element"></div>
+    <div class="craft-element"></div>
+    <div class="craft-element"></div>
+    <div class="craft-element"></div>
+    <div class="craft-element"></div>
+    <div class="craft-element"></div>
+    <div class="craft-element"></div>
+    <div class="craft-element"></div>
+    <div class="craft-element"></div>
+    <button class="accept-craft">Craft</button>
+    <button class="cancel-craft">Cancel</button>
+</div>
+</div>
+<div class="menu">
+    <div class="buttons-container">
+        <button id="start">Start</button>
+        <button>Setting</button>
+    </div>
+</div>
+<script src="lib/Listener/Listener.js"></script>
+<script src="lib/String.js"></script>
+<script src="lib/Lib.js"></script>
+<script src="lib/Debug.js"></script>
+<script src="lib/Collider.js"></script>
+<script src="lib/AI.js"></script>
+<script src="lib/Pause.js"></script>
+<script src="lib/Vector2.js"></script>
+<script src="lib/Particle/Particle.js"></script>
+<script src="lib/Particle/ParticleSystem.js"></script>
+<script src="lib/Light/Light.js"></script>
+<script src="lib/Particle/Damage.js"></script>
+<script src="Camera/camera.js"></script>
+<script src="GameObject.js"></script>
+<script src="World/Block.js"></script>
+<script src="World/Earth.js"></script>
+<script src="World/Water.js"></script>
+<script src="World/Wall.js"></script>
+<script src="World/Monster/Monster.js"></script>
+<script src="World/Monster/Skeleton.js"></script>
+<script src="World/Monster/Flying%20Eye.js"> </script>
+<script src="World/NPCs/NPC.js"></script>
+<script src="World/NPCs/Diler.js"></script>
+<script src="Affects/Affect.js"></script>
+<script src="Affects/Bolt.js"></script>
+<script src="Bullet/Bullet.js"></script>
+<script src="Bullet/Fairball.js"></script>
+<script src="Resource/Resource.js"></script>
+<script src="Resource/Other/Monster%20Eye.js"></script>
+<script src="Resource/Weapons/Weapon.js"></script>
+<script src="Resource/Weapons/Sword.js"></script>
+<script src="Resource/Weapons/LightSword.js"></script>
+<script src="Resource/Weapons/WaterSword.js"></script>
+<script src="Resource/Weapons/MagicWeapons/MagicWeapon.js"></script>
+<script src="Resource/Weapons/MagicWeapons/Emearald.js"></script>
+<script src="Inventory.js"></script>
+<script src="Craft/CraftBlock.js"></script>
+<script src="UI/HealthBar.js"></script>
+<script src="Player.js"></script>
+<script src="World/World.js"></script>
+<script src="generator.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

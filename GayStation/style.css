@@ -1,0 +1,64 @@
+
+.navbar-dark{
+    width: 100%;
+    height : 50px;
+    background-color: black;
+    position: fixed;
+    top : 0;
+    right: 0;
+}
+.navbar-element{
+    position: relative;
+    top : 50%;
+    transform: translate(0, -50%);
+    -webkit-transition: top 0.25s;
+    display: inline-flex;
+}
+.navbar-element:hover{
+     top: 60%;
+ }
+.navbar-element:hover .underline{
+    width: 100px;
+    background-color: red;
+}
+.navbar-element-text-current{
+    color: antiquewhite;
+    cursor : default;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right:  100px;
+}
+.navbar-element-text{
+    color: lightgray;
+    cursor : default;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 100px;
+
+}
+.underline{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width : 0;
+    height : 5px;
+    transform: translate(-100%, 0%);
+    background-color: black;
+    -webkit-transition: width 0.5s, background-color 0.5s;
+}
+.Home{
+    width: 100%;
+    height: 120pc;
+    background-color: darkblue;
+    z-index: 2;
+    margin-right: 0;
+}
+.infobar {
+    position: relative;
+    left: 100%;
+    top: 90%;
+    height: 30%;
+    width: 40%;
+    transform: translate(-100%, 0%);
+}
+.

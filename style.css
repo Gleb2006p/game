@@ -1,0 +1,240 @@
+body{
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+.inventory{
+    position: absolute;
+    top : 70%;
+    left: 50%;
+    height: 75px;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+.inventory-element{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    background-color: royalblue;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-right: 4px;
+    max-width: 12%;
+}
+.inventory-element-image{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.inventory-button{
+    position: absolute;
+    left : 50%;
+    top : 90%;
+    width: 75px;
+    height: 75px;
+    background-image: url("image/UI/inventory.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+}
+.exchange-window{
+    position: absolute;
+    top: -30%;
+    left  : 50%;
+    -webkit-transition: top 1s;
+    background-color: sandybrown;
+    width: 40%;
+    height : 30%;
+    transform: translate(-50%, -50%);
+}
+.start-exchange-window{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: opacity 0.5s;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+.lost-item{
+    position: relative;
+    top : 50%;
+    left: 75%;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+}
+.new-item{
+    position: relative;
+    top: 50%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+}
+.start-exchange{
+    position: relative;
+    top: 70%;
+    left: 5%;
+    width: 30%;
+    height: 30%;
+    background-color: green;
+}
+.heathBar{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    height: 15px;
+    width: 400px;
+    background-color: green;
+    -webkit-transition: background-color 1.5s, width 0.5s;
+    transform: translate(-50%, -50%);
+}
+.heathBar img{
+    position: relative;
+    top : 50%;
+    left: -10%;
+    width:  64px;
+    height: 64px;
+    transform: translate(-100%, -50%);
+}
+.death-window{
+    width: 99%;
+    height:  57pc;
+    z-index: -1;
+    position: absolute;
+    top : 0;
+    opacity: 0;
+    -webkit-transition: opacity 2s;
+    background-color: black;
+}
+.death-window img{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.death-window p{
+    position: absolute;
+    top :  30%;
+    left : 50%;
+    font-size: 60px;
+    font-family: "Yu Gothic UI", fantasy;
+    color: red;
+    transform: translate(-50%, -50%);
+}
+.chose-equipment{
+    position: absolute;
+    top : 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+}
+.chose-equipment img{
+    width: 100%;
+    height: 100%;
+}
+.craft{
+    position: absolute;
+    top : 30%;
+    left: 50%;
+    width: 240px;
+    height: 240px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+}
+.craft-element{
+    width: 70px;
+    height: 70px;
+    background-color: saddlebrown;
+    border-style: solid;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    background-size: 100%;
+}
+.craft-element:hover{
+    background-color: #ba5906;
+}
+.accept-craft {
+    position: absolute;
+    left: 100%;
+    top: 120%;
+    width: 100px;
+    height: 50px;
+    transform: translate(-100%, -100%);
+    border: solid;
+    background-color: darkgreen;
+    -webkit-transition: background-color 1s;
+}
+.accept-craft:hover{
+    background-color: lightgreen;
+}
+.cancel-craft{
+    position: absolute;
+    left: 0%;
+    top : 120%;
+    width: 100px;
+    height: 50px;
+    transform: translate(0, -100%);
+    border : solid;
+    background-color: darkred;
+    -webkit-transition: background-color 1s;
+}
+
+.cancel-craft:hover{
+    background-color: orangered;
+}
+
+.game {
+    display: none;
+}
+.menu {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url("image/UI/background.png");
+}
+.buttons-container{
+    position: absolute;
+    left : 50vw;
+    top : 50vh;
+    width: 50vh;
+    height: 50vh;
+
+    transform: translate(-50%, -50%);
+
+
+}
+.buttons-container button{
+    width: 50%;
+    height: 10%;
+    opacity: 50%;
+    transform: translateX(50%);
+    background-color: royalblue;
+    border-style: solid;
+    border-color : black;
+    -webkit-transition: background-color 0.25s;
+    margin-bottom: 10%;
+}
+.buttons-container button:hover{
+    background-color: blue;
+}
